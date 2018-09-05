@@ -1,5 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import Component from './component'
+import { render } from 'react-dom'
+import Family from './family'
+import Member from './member'
 
-ReactDOM.render(<Component value='Show' />, document.getElementById('app'))
+render(
+  <div>
+    <Family lastname={'Justino'}>
+      <Member name={'Felipe'} />
+      <Member name={'Theo'} />
+    </Family>
+    <Family lastname={'Mendonça'}>
+      <Member name={'Bianca'} />
+      <Member name={'Tita'} />
+    </Family>
+  </div>
+  , document.getElementById('app'))
