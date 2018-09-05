@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Classcomponent from './classComponent'
+import Field from './field'
 
 render(
   <div>
-    <Classcomponent label='Contador' initialValue={10} />
+    <Field initialValue='teste' />
   </div>
   , document.getElementById('app'))
